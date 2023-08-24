@@ -111,5 +111,18 @@ variable "subnet_id_3" {
 }
 
 
+################# RDS #############3
+
+# variable "db_password" {
+#   description = "Password for rds"
+#   type        = string
+#   #default     = ""
+# }
+
+variable "engine" {
+  description = "RDS Engine"
+  type        = string
+  default     = "mysql"
+}
 
 
