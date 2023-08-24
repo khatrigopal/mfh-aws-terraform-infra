@@ -1,5 +1,5 @@
 resource "aws_eks_node_group" "worker-node-group" {
-  cluster_name    = aws_eks_cluster.devopsthehardway-eks.name
+  cluster_name    = aws_eks_cluster.mfh-eks.name
   node_group_name = "mfh-workernodes"
   node_role_arn   = aws_iam_role.workernodes.arn
   subnet_ids      = [var.subnet_id_1, var.subnet_id_2, var.subnet_id_3]

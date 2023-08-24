@@ -1,4 +1,4 @@
-resource "aws_eks_cluster" "devopsthehardway-eks" {
+resource "aws_eks_cluster" "mfh-eks" {
   name     = "mfh-cluster"
   role_arn = aws_iam_role.eks-iam-role.arn
 
