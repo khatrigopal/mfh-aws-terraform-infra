@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = var.region
+  region = var.region
   #profile = "mfh"
   default_tags {
     tags = {
